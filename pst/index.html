@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin RH - Painel de Controle</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="logo">
+                <h3>Admin RH</h3>
+            </div>
+            <nav>
+                <ul>
+                  <nav>
+                    <ul>
+                        <li><a href="#" class="nav-link" data-page="dashboard">Dashboard</a></li>
+                        <li><a href="#" class="nav-link active" data-page="vagas">Vagas</a></li>
+                        <li><a href="#" class="nav-link" data-page="candidatos">Candidatos</a></li>
+                        <li><a href="#" class="nav-link" data-page="relatorios">Relatórios</a></li>
+                    </ul>
+                </nav>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h2>Criação de Vaga</h2>
+            </header>
+
+            <section class="form-section">
+                <form id="form-vaga">
+                    <div class="form-group">
+                        <label for="titulo">Título da Vaga</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Descrição da Vaga</label>
+                        <textarea id="descricao" name="descricao" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requisitos">Requisitos (separar com vírgulas)</label>
+                        <input type="text" id="requisitos" name="requisitos" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="localizacao">Localização</label>
+                        <input type="text" id="localizacao" name="localizacao">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo-contrato">Tipo de Contrato</label>
+                        <select id="tipo-contrato" name="tipo-contrato">
+                            <option value="clt">CLT</option>
+                            <option value="pj">PJ</option>
+                            <option value="estagio">Estágio</option>
+                            <option value="freelance">Freelance</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="salario">Salário (opcional)</label>
+                        <input type="text" id="salario" name="salario">
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Publicar Vaga</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
